@@ -21,9 +21,7 @@ if not 'CI' in os.environ:
     from PyQt4.QtGui import QMessageBox
     QMessageBox.information(None, "BETA client information",
                             "<p>This client always connects to the <b>test server</b>.</p>"
-                            "<p>You can't play or chat with non-beta players and all stats will be lost.</p>"
-                            "Your account <b>password is 'foo'</b> and your login may be outdated.")
-
+                            "<p>You can't play or chat with non-beta players and all stats will be lost.</p>")
 
 class ClientState(IntEnum):
     '''
