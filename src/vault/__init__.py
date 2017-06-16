@@ -1,5 +1,5 @@
 from PyQt4 import QtCore, QtGui
-from PyQt4 import QtWebKit
+from PySide import QtWebKit
 from stat import *
 import util
 import urllib
