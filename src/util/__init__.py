@@ -698,7 +698,7 @@ def uniqueID(user, session):
 
 def userNameAction(parent, caption, action):
     """ Get a username and execute action with it"""
-    username, success = QInputDialog.getText(parent, 'Input Username', caption)
+    username, success = QtWidgets.QInputDialog.getText(parent, 'Input Username', caption)
     if success and username != '':
         action(username)
 
