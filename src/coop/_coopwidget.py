@@ -106,7 +106,7 @@ class CoopWidget(FormClass, BaseClass):
             w = self.leaderBoardTextFour
 
                         
-        doc = QtGui.QTextDocument()
+        doc = QtWidgets.QTextDocument()
         doc.addResource(3, QtCore.QUrl("style.css"), self.leaderBoard.styleSheet() )
         html = ("<html><head><link rel='stylesheet' type='text/css' href='style.css'></head><body>")
         
