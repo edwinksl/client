@@ -354,7 +354,7 @@ class ReplayItem(QtWidgets.QTreeWidgetItem):
         menu.popup(QtWidgets.QCursor.pos())
 
     def downloadReplay(self):
-        QtWidgets.QDesktopServices.openUrl(QtCore.QUrl(self.url))
+        QtGui.QDesktopServices.openUrl(QtCore.QUrl(self.url))
 
     def display(self, column):
         if column == 0:

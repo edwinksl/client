@@ -181,7 +181,7 @@ class Channel(FormClass, BaseClass):
         elif url.scheme() == "fafgame":
             self.lobby.client.joinGameFromURL(url)
         else:
-            QtWidgets.QDesktopServices.openUrl(url)
+            QtGui.QDesktopServices.openUrl(url)
 
     @QtCore.pyqtSlot(str, str)
     def printAnnouncement(self, text, color, size, scroll_forced = True):
