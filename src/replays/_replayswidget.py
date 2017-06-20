@@ -480,7 +480,7 @@ class ReplaysWidget(BaseClass, FormClass):
                     url = QtCore.QUrl()
                     url.setScheme("faflive")
                     url.setHost("lobby.faforever.com")
-                    url.setPath(str(info["uid"]) + "/" + name + ".SCFAreplay")
+                    url.setPath("/" + str(info["uid"]) + "/" + name + ".SCFAreplay")
                     query = QtCore.QUrlQuery()
                     query.addQueryItem("map", info["mapname"])
                     query.addQueryItem("mod", info["featured_mod"])
