@@ -38,6 +38,8 @@ install:
   - "xcopy %PYTHON%\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5WebChannel.dll . /I"
   - "xcopy %PYTHON%\\lib\\site-packages\\PyQt5\\Qt\\bin\\libEGL.dll . /I"
   - "xcopy %PYTHON%\\lib\\site-packages\\PyQt5\\Qt\\bin\\libGLESv2.dll . /I"
+  - "xcopy %PYTHON%\\lib\\site-packages\\PyQt5\\Qt\\resources\\icudtl.dat . /I"
+
   - ps: "$env:faf_version = \"$(&C:\\Python36\\python .\\src\\config\\version.py)\".Replace(' ','')"
   - ps: "$env:APPVEYOR_BUILD_VERSION = \"$($env:faf_version)+$($env:APPVEYOR_BUILD_NUMBER)\""
   - ps: "Write-Host \"$($env:faf_version) + $($env:APPVEYOR_BUILD_NUMBER) = $($env:APPVEYOR_BUILD_VERSION)\""
