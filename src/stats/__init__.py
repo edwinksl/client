@@ -3,7 +3,7 @@
 
 
 from PyQt4 import QtCore
-from PyQt4 import QtWebKit
+from PySide import QtWebKit
 import logging
 import urllib
 import util
