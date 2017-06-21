@@ -1,6 +1,7 @@
 
 
-from PyQt4 import QtCore, QtGui, QtWebKit
+from PyQt4 import QtCore, QtGui
+from PySide import QtWebKit
 import util
 from stats import mapstat
 from config import Settings
