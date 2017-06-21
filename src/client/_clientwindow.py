@@ -30,7 +30,8 @@ Created on Dec 1, 2011
 @author: thygrrr
 '''
 
-from PyQt4 import QtCore, QtGui, QtNetwork, QtWebKit
+from PyQt4 import QtCore, QtGui, QtNetwork
+from PySide import QtWebKit
 from types import IntType, FloatType, ListType, DictType
 
 from client import ClientState, LOBBY_HOST, \
