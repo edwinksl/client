@@ -85,4 +85,3 @@ class NewsWidget(FormClass, BaseClass):
     def loadFinished(self, ok):
         self.hider.unhide(self.newsWebView)
         self.newsWebView.loadFinished.disconnect(self.loadFinished)
-
