@@ -1,4 +1,5 @@
-from PyQt4 import QtCore, QtGui, QtWebKit
+from PyQt4 import QtCore, QtGui
+from PySide import QtWebKit
 from PyQt4.QtCore import Qt
 
 import webbrowser
